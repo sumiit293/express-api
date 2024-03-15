@@ -19,4 +19,11 @@ app.get("/test",(req,res)=>{
     });
 })
 
+app.get("/",(req,res)=>{
+  const nodeEnvValue = process.env.NODE_ENV;
+  res.status(200).json({
+      msg: `Welcome to express api your in ${nodeEnvValue} environment`
+  });
+})
+
 app.listen(80);
