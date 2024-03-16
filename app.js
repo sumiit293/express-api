@@ -26,5 +26,7 @@ app.get("/",(req,res)=>{
   });
 })
 
+// this code is free to be used by any one
+
 
 app.listen(80);
